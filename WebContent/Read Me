@@ -1,0 +1,34 @@
+Read Me
+-------
+
+Woho
+Root Directory
+==============
+header.php 	= Includes from <!Doctype..> to</header>
+			= Includes inc_nav.php, inc_social.php and inc_styles.php
+
+
+
+
+Meta Directory
+==============
+about_meta.php	--> For about page
+comp_meta.php	--> For compare colleges page
+contact_meta.php--> For contact page
+home_meta.php	--> For homepage
+recom_meta.php 	--> For recommendation page
+feat_meta.php	--> For features page
+
+
+Inc Directory
+==============
+inc_nav.php		= Includes navigation links (twitter, facebook and rss).
+
+inc_styles.php = Includes links to stylesheet and html5 modernizr js file
+
+inc_social.php = Includes Vcard, Mob number and social links of twitter, facebook and rss
+
+inc_slider.php = Includes Slider.
+
+Admin	user(32)	= gujjuadminsecretkey
+		pass	= gcadmin 
