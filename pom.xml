@@ -279,13 +279,7 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- PMC Joda Money -->
-		<dependency>
-			<groupId>com.pmcretail</groupId>
-			<artifactId>pmcjodamoney</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
+		
 		<!-- Joda Time for Jasper -->
 		<dependency>
 			<groupId>joda-time</groupId>
@@ -305,47 +299,13 @@
 			<version>1.4</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.pmcretail</groupId>
-			<artifactId>security-framework</artifactId>
-			<version>1.0.0-BUILD-SNAPSHOT</version>
-		</dependency>
+		
 		<!-- <dependency> <groupId>com.pmcretail</groupId> <artifactId>security-keycloak</artifactId> 
 			<version>${security-keycloak-version}</version> </dependency> -->
 
-		<dependency>
-			<groupId>com.pmcretail</groupId>
-			<artifactId>pmc-spring-jms</artifactId>
-			<version>1.0.0-BUILD-SNAPSHOT</version>
-		</dependency>
+		
 
-		<dependency>
-			<groupId>com.pmcretail.schedulingframework</groupId>
-			<artifactId>PMCSchedulingFramework</artifactId>
-			<version>${schedulingframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.pmcretail</groupId>
-			<artifactId>reportingframework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>xml-apis</groupId>
-			<artifactId>xml-apis</artifactId>
-			<version>1.4.01</version>
-		</dependency>
-		<dependency>
-			<groupId>dbunitframework</groupId>
-			<artifactId>dbunitframework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.3.1</version>
-			<scope>test</scope>
-		</dependency>
-
+		
 		<!-- PowerMock Dependency for Manager Layer Test cases -->
 		<dependency>
 			<groupId>org.powermock</groupId>

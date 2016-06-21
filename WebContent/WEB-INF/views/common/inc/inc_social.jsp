@@ -3,12 +3,12 @@
 				
 				<div class="widget widget_contacts">
 
-					<div class="vcard clearfix">
+					<!-- <div class="vcard clearfix">
 
 						<p class="top-phone">Call Us : <span>+1 800 132 7527</span></p>
 
-					</div><!--/ .vcard-->
-		
+					</div>/ .vcard
+		 -->
 					<div class="clear"></div>
 					
 					<ul class="social-icons">
