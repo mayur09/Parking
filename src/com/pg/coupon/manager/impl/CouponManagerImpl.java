@@ -25,10 +25,10 @@ public class CouponManagerImpl extends GenericManagerImpl<ParkingCoupon, String>
 	}
 
 	@Transactional
-	public ParkingCoupon saveCoupon(Integer mobileNo) {
+	public ParkingCoupon saveCoupon(ParkingCoupon parkingCoupon) {
+
 		Calendar expiryDate = Calendar.getInstance();
 		expiryDate.add(Calendar.MONTH, 1);
-		ParkingCoupon parkingCoupon = new ParkingCoupon();
 		parkingCoupon.setName("mayur");
 		parkingCoupon.setCouponType(1);
 		parkingCoupon.setExpiryDate(expiryDate);

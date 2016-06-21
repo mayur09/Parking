@@ -1,0 +1,10 @@
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<pattern>/resources/*</pattern>
+		<pattern>/ajax/*</pattern>
+		<pattern>/json_*</pattern>
+	</excludes>
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

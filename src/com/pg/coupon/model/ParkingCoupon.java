@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -43,6 +44,10 @@ public class ParkingCoupon implements Serializable {
 	@ManyToMany
 	@JoinTable(name = "coupon_location", joinColumns = { @JoinColumn(name = "coupon_id", nullable = true) }, inverseJoinColumns = { @JoinColumn(name = "location_id", nullable = true) })
 	protected Set<ParkingLocation> parkingLocations = new HashSet<ParkingLocation>();
+
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
 
 	public String getId() {
 		return id;
@@ -82,6 +87,14 @@ public class ParkingCoupon implements Serializable {
 
 	public void setParkingLocations(Set<ParkingLocation> parkingLocations) {
 		this.parkingLocations = parkingLocations;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
