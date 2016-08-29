@@ -1,6 +1,5 @@
-
-	<%@ include file="header.jsp"%>
-	<%@ include file="./inc/inc_slider.jsp"%>
+	<%@ include file="common/header.jsp"%>
+	<%@ include file="/inc/inc_slider.jsp"%>
 
 	
 	<section id="content">
@@ -122,4 +121,4 @@
 	</section><!--/ #content-->
     
 
-<%@ include file="footer.jsp"%>
+<%@ include file="common/footer.jsp"%>

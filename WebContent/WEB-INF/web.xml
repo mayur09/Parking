@@ -6,13 +6,10 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath*:/cashmanagement-mvc.xml
-			classpath*:/cashmanagement-dao.xml
-			classpath*:/cashmanagement-resources.xml
-			classpath*:/cashmanagement-manager.xml
-			
-			
-			
+			classpath*:/pg-mvc.xml
+			classpath*:/pg-dao.xml
+			classpath*:/pg-resources.xml
+			classpath*:/pg-manager.xml
 		</param-value>
 	</context-param>
 
@@ -29,10 +26,10 @@
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-			classpath*:/cashmanagement-mvc.xml
-			classpath*:/cashmanagement-dao.xml
-			classpath*:/cashmanagement-resources.xml
-			classpath*:/cashmanagement-manager.xml
+			classpath*:/pg-mvc.xml
+			classpath*:/pg-dao.xml
+			classpath*:/pg-resources.xml
+			classpath*:/pg-manager.xml
 			
 			</param-value>
 		</init-param>

@@ -9,11 +9,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.parking.common.dao.GenericDao;
+import com.parking.common.security.manager.impl.GenericManagerImpl;
 import com.pg.coupon.manager.CouponManager;
 import com.pg.coupon.model.ParkingCoupon;
 import com.pg.coupon.model.ParkingLocation;
-import com.pmcretail.common.dao.GenericDao;
-import com.pmcretail.framework.security.manager.impl.GenericManagerImpl;
 
 @Service("couponManager")
 public class CouponManagerImpl extends GenericManagerImpl<ParkingCoupon, String> implements CouponManager {
@@ -30,7 +30,6 @@ public class CouponManagerImpl extends GenericManagerImpl<ParkingCoupon, String>
 		Calendar expiryDate = Calendar.getInstance();
 		expiryDate.add(Calendar.MONTH, 1);
 		parkingCoupon.setName("mayur");
-		parkingCoupon.setCouponType(1);
 		parkingCoupon.setExpiryDate(expiryDate);
 		ParkingLocation parkingLocation = new ParkingLocation();
 		parkingLocation.setId("1");

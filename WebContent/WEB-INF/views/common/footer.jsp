@@ -53,7 +53,7 @@
 				
 					<ul class="social-icons clearfix">
 		
-					<%@ include file="./inc/inc_social_footer.php"%>
+					<%@ include file="inc/inc_social_footer.jsp"%>
 
 						
 				
@@ -69,7 +69,7 @@
 			<div class="sixteen columns">
 	
 				<div class="adjective clearfix">
-					<div class="copyright" >Copyright © 2013.<a href="http://gujjucolleges.com" target="_blank">GujjuCollegs.</a> All rights reserved</div>
+					<div class="copyright" >Copyright © 2016.<a href="http://parkingglobe.com" target="_blank">ParkingGlobe.</a> All rights reserved</div>
 				</div><!--/ .adjective-->			
 				
 			</div><!--/ .columns-->
@@ -101,8 +101,8 @@
 <script src="changer/js/changer.js"></script>
 <script type="text/javascript" src="./slide/jquery.validate.pack.js"></script>
 <script type="text/javascript" src="./slide/jquery.contactable.js"></script>
-<script>$(function(){$('#contactable').contactable({subject: 'Feedback for GujjuColleges'});});</script>
-
+<!-- <script>$(function(){$('#contactable').contactable({subject: 'Feedback for GujjuColleges'});});</script>
+ -->
 
 
 <script src="./js/bootstrap.min.js"></script>

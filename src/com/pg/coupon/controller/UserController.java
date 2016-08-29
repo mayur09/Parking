@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.pg.coupon.manager.UserManager;
 import com.pg.coupon.model.ParkingCoupon;
-import com.pg.coupon.model.User;
+import com.pg.user.model.User;
 
 @Controller
 @Scope("prototype")

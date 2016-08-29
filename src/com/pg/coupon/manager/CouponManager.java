@@ -1,7 +1,7 @@
 package com.pg.coupon.manager;
 
+import com.parking.common.security.manager.GenericManager;
 import com.pg.coupon.model.ParkingCoupon;
-import com.pmcretail.framework.security.manager.GenericManager;
 
 public interface CouponManager extends GenericManager<ParkingCoupon, String> {
 

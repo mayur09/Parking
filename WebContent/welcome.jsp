@@ -1,5 +1,5 @@
 
-<%@ include file="common/header.jsp"%>
+<%@ include file="WEB-INF/views/common/header.jsp"%>
 
 <section id="content">
 
@@ -7,7 +7,7 @@
 
 		<div class="page-header clearfix">
 
-			<h1>Get aa Your Coupon</h1>
+			<h1>Get Your Coupon</h1>
 
 		</div>
 		<!--/ .page-header-->
@@ -53,4 +53,4 @@
 
 </section>
 <!--/ #content-->
-	<%@ include file="common/footer.jsp"%>
+	<%@ include file="WEB-INF/views/common/footer.jsp"%>

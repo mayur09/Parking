@@ -24,9 +24,7 @@
 
 	<!-- Includes the body page. -->
 	<div class="main-page">
-		<div class="left-panel">
-			<jsp:include page="../views/common/menu.jsp" />
-		</div>
+		
 		<div class="right-cont">
 
 			<span id="tradingregionOrStoreId" class="hide"><spring:message

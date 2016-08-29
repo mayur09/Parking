@@ -122,4 +122,4 @@
 	</section><!--/ #content-->
     
 
-<%@ include file="footer.jsp"%>
+<%@ include file="WEB-INF/views/common/footer.jsp"%>

@@ -12,15 +12,17 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
+
+import com.pg.user.model.User;
 
 @Entity
 @Table(name = "parking_coupon")
 public class ParkingCoupon implements Serializable {
 
+	private static String DEFAULT_NAME = "Parking Coupon";
 	/**
 	 * 
 	 */
@@ -33,20 +35,26 @@ public class ParkingCoupon implements Serializable {
 	private String id;
 
 	@Column(name = "name", length = 50, nullable = true)
-	private String name;
-
-	@Column(name = "coupon_type", length = 50, nullable = true)
-	private Integer couponType;
+	private String name = DEFAULT_NAME;
 
 	@Column(name = "expiry_date")
 	private Calendar expiryDate;
 
+	@Column(name = "expired")
+	private boolean expired;
+
+	@Column(name = "claimed")
+	private boolean claimed;
+
+	@Column(name = "claim_date")
+	private Calendar claimDate;
+
 	@ManyToMany
-	@JoinTable(name = "coupon_location", joinColumns = { @JoinColumn(name = "coupon_id", nullable = true) }, inverseJoinColumns = { @JoinColumn(name = "location_id", nullable = true) })
+	@JoinTable(name = "coupon_location", joinColumns = {
+			@JoinColumn(name = "coupon_id", nullable = true) }, inverseJoinColumns = {
+					@JoinColumn(name = "location_id", nullable = true) })
 	protected Set<ParkingLocation> parkingLocations = new HashSet<ParkingLocation>();
 
-	@ManyToOne
-	@JoinColumn(name = "user_id")
 	private User user;
 
 	public String getId() {
@@ -65,12 +73,28 @@ public class ParkingCoupon implements Serializable {
 		this.name = name;
 	}
 
-	public Integer getCouponType() {
-		return couponType;
+	public boolean isExpired() {
+		return expired;
 	}
 
-	public void setCouponType(Integer couponType) {
-		this.couponType = couponType;
+	public void setExpired(boolean expired) {
+		this.expired = expired;
+	}
+
+	public boolean isClaimed() {
+		return claimed;
+	}
+
+	public void setClaimed(boolean claimed) {
+		this.claimed = claimed;
+	}
+
+	public Calendar getClaimDate() {
+		return claimDate;
+	}
+
+	public void setClaimDate(Calendar claimDate) {
+		this.claimDate = claimDate;
 	}
 
 	public Calendar getExpiryDate() {
