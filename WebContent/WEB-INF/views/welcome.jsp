@@ -1,5 +1,5 @@
 
-<%@ include file="WEB-INF/views/common/header.jsp"%>
+<%@ include file="common/header.jsp"%>
 
 <section id="content">
 
@@ -53,4 +53,4 @@
 
 </section>
 <!--/ #content-->
-	<%@ include file="WEB-INF/views/common/footer.jsp"%>
+	<%@ include file="common/footer.jsp"%>

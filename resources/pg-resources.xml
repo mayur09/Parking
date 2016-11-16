@@ -23,6 +23,18 @@
 		</beans:property>
 	</beans:bean>
 
+	<!-- Bean for Internationalization -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="useCodeAsDefaultMessage" value="true" />
+		<beans:property name="basenames">
+			<beans:list>
+				<beans:value>classpath:message_en</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="cacheSeconds" value="0" />
+		<beans:property name="defaultEncoding" value="UTF-8" />
+	</beans:bean>
 
 
 </beans:beans>

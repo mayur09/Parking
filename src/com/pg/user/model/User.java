@@ -1,6 +1,9 @@
 package com.pg.user.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -24,6 +27,14 @@ import com.pg.coupon.model.ParkingCoupon;
 @Table(name = "user")
 public class User implements Serializable {
 
+	
+	public static void main(String[] args){
+		//int[] a = new int(5);
+		double d =0;
+		byte a =12;
+		byte b = 5;
+		System.out.println(a|b);
+	}
 	/**
 	 * 
 	 */

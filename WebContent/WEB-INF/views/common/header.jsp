@@ -25,6 +25,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 
+	<%@ include file="taglibs.jsp"%> 
 	<!-- Stylesheet Including -->
 	<%@ include file="./inc/inc_styles.jsp"%>
 	       
@@ -41,7 +42,7 @@
 			<div class="eight columns">
 				
 				<div id="logo">
-					<a href="index.jsp"><img src="images/logo.png"  alt="logo"></a>
+					<a href="index.jsp"><img src="<c:url value="/resources/images/logo.png"/>"/></a>
 				</div><!--/ #logo-->
 				
 			</div><!--/ .columns-->

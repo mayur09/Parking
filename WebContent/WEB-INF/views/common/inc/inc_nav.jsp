@@ -8,7 +8,7 @@
 
 						<div class="menu">
 							<ul>
-								<li><a href="index.jsp">Parking Coupon</a>
+								<li><a href="coupons">Parking Coupon</a>
 
 								</li>
 								<!-- <li><a href="compare.jsp">Compare Colleges</a>
